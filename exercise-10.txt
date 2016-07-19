@@ -1,0 +1,7 @@
+// DONT DO THIS:
+
+
+UPDATE ElectronicMail SET type = CASE   
+      WHEN type="home" THEN "work"  
+      WHEN type="work" THEN "home"   
+   END;
