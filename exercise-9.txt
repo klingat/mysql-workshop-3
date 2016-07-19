@@ -1,0 +1,84 @@
+// Exercise 9
+
+// List all of the cities within the countries of Canada, Austria, Isle of Man, Ireland and Japan:
+
+    mysql> select city from Address where country in ("Canada", "Austria", "Isle of Man", "Ireland", "Japan");
+  
+    // OUTPUT:
+    
+    +----------------+
+    | city           |
+    +----------------+
+    | Dubbo          |
+    | Ceyhan         |
+    | Jackson        |
+    | Belfast        |
+    | Tauranga       |
+    | Rzeszów        |
+    | Cartago        |
+    | Cagnes-sur-Mer |
+    | Ceyhan         |
+    | Houston        |
+    | Galway         |
+    | Pietraroja     |
+    | Moulins        |
+    | Anápolis       |
+    | Assen          |
+    | Shimla         |
+    | ?slahiye       |
+    | Kailua         |
+    | Edmundston     |
+    | Satara         |
+    | Angers         |
+    | Siedlce        |
+    | Chestermere    |
+    | Tirrases       |
+    | Zwickau        |
+    | Belfast        |
+    | Horsham        |
+    | Chartres       |
+    | Rollegem       |
+    | Kraków         |
+    | Bremerhaven    |
+    | Milena         |
+    | Cork           |
+    | Bozeman        |
+    | Pontevedra     |
+    | Bodmin         |
+    | Ogbomosho      |
+    | Denderbelle    |
+    | Baulers        |
+    | San Vicente    |
+    | Alness         |
+    | Springfield    |
+    | Abbeville      |
+    | San Francisco  |
+    | Lasnigo        |
+    | Nagaon         |
+    | Terneuzen      |
+    | Raj Nandgaon   |
+    | Meridian       |
+    | Mabompr?       |
+    | Calmar         |
+    | Hamburg        |
+    | Quesada        |
+    | Pabianice      |
+    | Dover          |
+    | Vienna         |
+    | Berlin         |
+    | Hillsboro      |
+    +----------------+
+    58 rows in set (0.00 sec)
+
+
+
+// PRACTICE:
+
+select city, country from Address where 
+country="Canada" OR 
+country="Austria" OR 
+country="Isle of Man" OR 
+country="Ireland" OR 
+country="Japan";
+
+select city, country from Address where country in ("Canada", "Austria", "Isle of Man", "Ireland", "Japan");
