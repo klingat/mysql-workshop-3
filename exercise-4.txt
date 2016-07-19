@@ -1,0 +1,78 @@
+// Exercise 4
+
+// List all of the first names for AddressBook.name="Pharetra Ut Limited":
+
+    select firstName from Entry join AddressBook on Entry.addressBookId = AddressBook.id where AddressBook.name="Pharetra Ut Limited";                                                                     
+    
+    // OUTPUT:
+    
+    +-------------+
+    | firstName   |
+    +-------------+
+    | Zelenia     |
+    | Abdul       |
+    | Idola       |
+    | Illana      |
+    | Winifred    |
+    | Buckminster |
+    | Heidi       |
+    | Nell        |
+    | Ciara       |
+    | Sylvia      |
+    | Caryn       |
+    | Dieter      |
+    | Jamalia     |
+    | Herrod      |
+    | Unity       |
+    | Pascale     |
+    | Colton      |
+    | Jamal       |
+    | Abel        |
+    | Zena        |
+    | Prescott    |
+    | Idona       |
+    | Paloma      |
+    | Neve        |
+    | Kyla        |
+    | Kimberley   |
+    | Jillian     |
+    | Addison     |
+    | Jacqueline  |
+    | Sasha       |
+    | Lee         |
+    | Salvador    |
+    | Yoko        |
+    | Stacy       |
+    | Halee       |
+    | Blythe      |
+    | Tad         |
+    | Haley       |
+    | Lara        |
+    | Summer      |
+    | Latifah     |
+    | Faith       |
+    | Stacey      |
+    | Jennifer    |
+    | Fulton      |
+    | Colin       |
+    | Thane       |
+    | Caryn       |
+    | Bo          |
+    | Jamal       |
+    | Amena       |
+    | Melanie     |
+    | Driscoll    |
+    | Gareth      |
+    | Colt        |
+    | Martha      |
+    | Sierra      |
+    | Nita        |
+    | Celeste     |
+    | Kathleen    |
+    | Samuel      |
+    | Aaron       |
+    | Cheyenne    |
+    | Brett       |
+    | Rebekah     |
+    +-------------+
+    65 rows in set (0.01 sec)
