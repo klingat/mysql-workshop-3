@@ -1,0 +1,14 @@
+// Exercise 5
+
+// List all of the emails associated to AddressBook.id = 100
+
+    select email from Account join AddressBook on Account.id = AddressBook.accountId where AddressBook.id=100;
+    
+    // OUTPUT:
+    
+    +----------------------------------+
+    | email                            |
+    +----------------------------------+
+    | dapibus.quam@interdumligulaeu.ca |
+    +----------------------------------+
+    1 row in set (0.00 sec)
