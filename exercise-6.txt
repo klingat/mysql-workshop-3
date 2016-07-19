@@ -1,0 +1,14 @@
+// Exercise 6
+
+// List all of the phone numbers for Jenkins, Charlotte
+
+    select content from Phone join Entry on Entry.id = Phone.entryId where Entry.firstName="Charlotte" AND Entry.lastName="Jenkins";
+   
+    // OUTPUT:
+    
+    +----------------+
+    | content        |
+    +----------------+
+    | (110) 167-3420 |
+    | (605) 175-1334 |
+    +----------------+
